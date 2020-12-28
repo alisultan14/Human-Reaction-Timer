@@ -1,0 +1,73 @@
+#-----------------------------------------------------------
+# Vivado v2016.2 (64-bit)
+# SW Build 1577090 on Thu Jun  2 16:32:40 MDT 2016
+# IP Build 1577682 on Fri Jun  3 12:00:54 MDT 2016
+# Start of session at: Mon Nov 16 21:02:33 2020
+# Process ID: 10324
+# Current directory: C:/Users/User/Desktop/ECE/Final Project
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent8608 C:\Users\User\Desktop\ECE\Final Project\Final Project.xpr
+# Log file: C:/Users/User/Desktop/ECE/Final Project/vivado.log
+# Journal file: C:/Users/User/Desktop/ECE/Final Project\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project {C:/Users/User/Desktop/ECE/Final Project/Final Project.xpr}
+update_compile_order -fileset sources_1
+set_property top Reaction_Timer_FSM_tb [get_filesets sim_1]
+set_property top_lib xil_defaultlib [get_filesets sim_1]
+update_compile_order -fileset sim_1
+launch_simulation
+reset_run synth_1
+launch_runs synth_1
+wait_on_run synth_1
+launch_simulation
+launch_simulation
+launch_simulation
+source Reaction_Timer_FSM_tb.tcl
+add_wave {{/Reaction_Timer_FSM_tb/DUV}} 
+save_wave_config {C:/Users/User/Desktop/ECE/Final Project/Reaction_Timer_FSM_tb_behav.wcfg}
+add_files -fileset sim_1 -norecurse {{C:/Users/User/Desktop/ECE/Final Project/Reaction_Timer_FSM_tb_behav.wcfg}}
+set_property xsim.view {{C:/Users/User/Desktop/ECE/Final Project/Reaction_Timer_FSM_tb_behav.wcfg}} [get_filesets sim_1]
+close_sim
+launch_simulation
+open_wave_config C:/Users/User/Desktop/ECE/Final
+open_wave_config Project/Reaction_Timer_FSM_tb_behav.wcfg
+source Reaction_Timer_FSM_tb.tcl
+close_sim
+launch_simulation
+open_wave_config C:/Users/User/Desktop/ECE/Final
+open_wave_config Project/Reaction_Timer_FSM_tb_behav.wcfg
+source Reaction_Timer_FSM_tb.tcl
+add_wave {{/Reaction_Timer_FSM_tb/DUV}} 
+close_sim
+launch_simulation
+open_wave_config C:/Users/User/Desktop/ECE/Final
+open_wave_config Project/Reaction_Timer_FSM_tb_behav.wcfg
+source Reaction_Timer_FSM_tb.tcl
+add_wave {{/Reaction_Timer_FSM_tb/DUV}} 
+save_wave_config {C:/Users/User/Desktop/ECE/Final Project/Reaction_Timer_FSM_tb_behav1.wcfg}
+add_files -fileset sim_1 -norecurse {{C:/Users/User/Desktop/ECE/Final Project/Reaction_Timer_FSM_tb_behav1.wcfg}}
+set_property xsim.view {{C:/Users/User/Desktop/ECE/Final Project/Reaction_Timer_FSM_tb_behav.wcfg} {C:/Users/User/Desktop/ECE/Final Project/Reaction_Timer_FSM_tb_behav1.wcfg}} [get_filesets sim_1]
+update_compile_order -fileset sources_1
+close [ open {C:/Users/User/Desktop/ECE/Final Project/Simulation/reaction_top_tb.sv} w ]
+add_files {{C:/Users/User/Desktop/ECE/Final Project/Simulation/reaction_top_tb.sv}}
+update_compile_order -fileset sources_1
+add_files -norecurse {{C:/Users/User/Desktop/ECE/Final Project/RTL/debounce.sv}}
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+reset_run synth_1
+launch_runs synth_1
+wait_on_run synth_1
+reset_run synth_1
+launch_runs synth_1
+wait_on_run synth_1
+launch_runs impl_1
+wait_on_run impl_1
+set_property top reaction_top_tb [get_filesets sim_1]
+set_property top_lib xil_defaultlib [get_filesets sim_1]
+update_compile_order -fileset sim_1
+launch_simulation
+reset_run synth_1
+launch_runs synth_1
+wait_on_run synth_1
+launch_simulation

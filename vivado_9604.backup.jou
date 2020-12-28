@@ -1,0 +1,541 @@
+#-----------------------------------------------------------
+# Vivado v2016.2 (64-bit)
+# SW Build 1577090 on Thu Jun  2 16:32:40 MDT 2016
+# IP Build 1577682 on Fri Jun  3 12:00:54 MDT 2016
+# Start of session at: Tue Nov 17 09:36:58 2020
+# Process ID: 9604
+# Current directory: C:/Users/User/Desktop/ECE/Final Project
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent5564 C:\Users\User\Desktop\ECE\Final Project\Final Project.xpr
+# Log file: C:/Users/User/Desktop/ECE/Final Project/vivado.log
+# Journal file: C:/Users/User/Desktop/ECE/Final Project\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project {C:/Users/User/Desktop/ECE/Final Project/Final Project.xpr}
+update_compile_order -fileset sources_1
+launch_simulation
+reset_run synth_1
+launch_runs synth_1
+wait_on_run synth_1
+launch_simulation
+set_property SOURCE_SET sources_1 [get_filesets sim_1]
+close [ open {C:/Users/User/Desktop/ECE/Final Project/Simulation/time_count_tb.sv} w ]
+add_files -fileset sim_1 {{C:/Users/User/Desktop/ECE/Final Project/Simulation/time_count_tb.sv}}
+update_compile_order -fileset sim_1
+reset_run synth_1
+launch_runs synth_1
+wait_on_run synth_1
+launch_simulation
+open_wave_config C:/Users/User/Desktop/ECE/Final
+open_wave_config Project/Reaction_Timer_FSM_tb_behav.wcfg
+open_wave_config C:/Users/User/Desktop/ECE/Final
+open_wave_config Project/Reaction_Timer_FSM_tb_behav1.wcfg
+source reaction_top_tb.tcl
+close_sim
+launch_simulation
+open_wave_config C:/Users/User/Desktop/ECE/Final
+open_wave_config Project/Reaction_Timer_FSM_tb_behav.wcfg
+open_wave_config C:/Users/User/Desktop/ECE/Final
+open_wave_config Project/Reaction_Timer_FSM_tb_behav1.wcfg
+source reaction_top_tb.tcl
+reset_run synth_1
+launch_runs synth_1
+wait_on_run synth_1
+close_sim
+launch_simulation
+open_wave_config C:/Users/User/Desktop/ECE/Final
+open_wave_config Project/Reaction_Timer_FSM_tb_behav.wcfg
+open_wave_config C:/Users/User/Desktop/ECE/Final
+open_wave_config Project/Reaction_Timer_FSM_tb_behav1.wcfg
+source reaction_top_tb.tcl
+set_property top rcounter_tb [get_filesets sim_1]
+set_property top_lib xil_defaultlib [get_filesets sim_1]
+update_compile_order -fileset sim_1
+launch_simulation
+open_wave_config C:/Users/User/Desktop/ECE/Final
+open_wave_config Project/Reaction_Timer_FSM_tb_behav.wcfg
+open_wave_config C:/Users/User/Desktop/ECE/Final
+open_wave_config Project/Reaction_Timer_FSM_tb_behav1.wcfg
+source rcounter_tb.tcl
+close_sim
+launch_simulation
+open_wave_config C:/Users/User/Desktop/ECE/Final
+open_wave_config Project/Reaction_Timer_FSM_tb_behav.wcfg
+open_wave_config C:/Users/User/Desktop/ECE/Final
+open_wave_config Project/Reaction_Timer_FSM_tb_behav1.wcfg
+source rcounter_tb.tcl
+reset_run synth_1
+launch_runs synth_1
+wait_on_run synth_1
+set_property top reaction_top_tb [get_filesets sim_1]
+set_property top_lib xil_defaultlib [get_filesets sim_1]
+update_compile_order -fileset sim_1
+current_sim simulation_3
+close_sim
+launch_simulation
+reset_run synth_1
+launch_runs synth_1
+wait_on_run synth_1
+launch_simulation
+set_property top time_count_tb [get_filesets sim_1]
+set_property top_lib xil_defaultlib [get_filesets sim_1]
+update_compile_order -fileset sim_1
+launch_simulation
+launch_simulation
+close [ open {C:/Users/User/Desktop/ECE/Final Project/RTL/scroll_text_test.sv} w ]
+add_files {{C:/Users/User/Desktop/ECE/Final Project/RTL/scroll_text_test.sv}}
+update_compile_order -fileset sources_1
+reset_run synth_1
+launch_runs synth_1
+wait_on_run synth_1
+file mkdir C:/Users/User/Desktop/ECE/Final Project/Final Project.srcs/constrs_1
+file mkdir C:/Users/User/Desktop/ECE/Final Project/Final Project.srcs/constrs_1
+close [ open {C:/Users/User/Desktop/ECE/Final Project/Constraints/Scroll_Text_Const.xdc} w ]
+add_files -fileset constrs_1 {{C:/Users/User/Desktop/ECE/Final Project/Constraints/Scroll_Text_Const.xdc}}
+create_run impl_2 -parent_run synth_1 -flow {Vivado Implementation 2016} -strategy {Vivado Implementation Defaults}
+current_run [get_runs impl_2]
+set_property top Scroll_Text [current_fileset]
+update_compile_order -fileset sources_1
+reset_run synth_1
+launch_runs synth_1
+wait_on_run synth_1
+launch_runs impl_2
+wait_on_run impl_2
+launch_runs impl_2 -to_step write_bitstream
+wait_on_run impl_2
+reset_run synth_1
+launch_runs synth_1
+wait_on_run synth_1
+launch_runs impl_2
+wait_on_run impl_2
+launch_runs impl_2 -to_step write_bitstream
+wait_on_run impl_2
+open_hw
+connect_hw_server
+open_hw_target
+set_property PROGRAM.FILE {C:/Users/User/Desktop/ECE/Final Project/Final Project.runs/impl_2/Scroll_Text.bit} [lindex [get_hw_devices] 0]
+current_hw_device [lindex [get_hw_devices] 0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices] 0]
+set_property PROBES.FILE {} [lindex [get_hw_devices] 0]
+set_property PROGRAM.FILE {C:/Users/User/Desktop/ECE/Final Project/Final Project.runs/impl_2/Scroll_Text.bit} [lindex [get_hw_devices] 0]
+program_hw_devices [lindex [get_hw_devices] 0]
+refresh_hw_device [lindex [get_hw_devices] 0]
+reset_run synth_1
+launch_runs synth_1
+wait_on_run synth_1
+launch_runs impl_2
+wait_on_run impl_2
+launch_runs impl_2 -to_step write_bitstream
+wait_on_run impl_2
+set_property PROBES.FILE {} [lindex [get_hw_devices] 0]
+set_property PROGRAM.FILE {C:/Users/User/Desktop/ECE/Final Project/Final Project.runs/impl_2/Scroll_Text.bit} [lindex [get_hw_devices] 0]
+program_hw_devices [lindex [get_hw_devices] 0]
+set_property PROBES.FILE {} [lindex [get_hw_devices] 0]
+set_property PROGRAM.FILE {C:/Users/User/Desktop/ECE/Final Project/Final Project.runs/impl_2/Scroll_Text.bit} [lindex [get_hw_devices] 0]
+program_hw_devices [lindex [get_hw_devices] 0]
+refresh_hw_device [lindex [get_hw_devices] 0]
+reset_run synth_1
+launch_runs synth_1
+wait_on_run synth_1
+launch_runs impl_2
+wait_on_run impl_2
+launch_runs impl_2 -to_step write_bitstream
+wait_on_run impl_2
+set_property PROBES.FILE {} [lindex [get_hw_devices] 0]
+set_property PROGRAM.FILE {C:/Users/User/Desktop/ECE/Final Project/Final Project.runs/impl_2/Scroll_Text.bit} [lindex [get_hw_devices] 0]
+program_hw_devices [lindex [get_hw_devices] 0]
+set_property PROBES.FILE {} [lindex [get_hw_devices] 0]
+set_property PROGRAM.FILE {C:/Users/User/Desktop/ECE/Final Project/Final Project.runs/impl_2/Scroll_Text.bit} [lindex [get_hw_devices] 0]
+program_hw_devices [lindex [get_hw_devices] 0]
+refresh_hw_device [lindex [get_hw_devices] 0]
+reset_run synth_1
+launch_runs synth_1
+wait_on_run synth_1
+launch_runs impl_2
+wait_on_run impl_2
+launch_runs impl_2 -to_step write_bitstream
+wait_on_run impl_2
+set_property PROBES.FILE {} [lindex [get_hw_devices] 0]
+set_property PROGRAM.FILE {C:/Users/User/Desktop/ECE/Final Project/Final Project.runs/impl_2/Scroll_Text.bit} [lindex [get_hw_devices] 0]
+program_hw_devices [lindex [get_hw_devices] 0]
+set_property PROBES.FILE {} [lindex [get_hw_devices] 0]
+set_property PROGRAM.FILE {C:/Users/User/Desktop/ECE/Final Project/Final Project.runs/impl_2/Scroll_Text.bit} [lindex [get_hw_devices] 0]
+program_hw_devices [lindex [get_hw_devices] 0]
+refresh_hw_device [lindex [get_hw_devices] 0]
+reset_run synth_1
+launch_runs synth_1
+wait_on_run synth_1
+launch_runs impl_2
+wait_on_run impl_2
+launch_runs impl_2 -to_step write_bitstream
+wait_on_run impl_2
+set_property PROBES.FILE {} [lindex [get_hw_devices] 0]
+set_property PROGRAM.FILE {C:/Users/User/Desktop/ECE/Final Project/Final Project.runs/impl_2/Scroll_Text.bit} [lindex [get_hw_devices] 0]
+program_hw_devices [lindex [get_hw_devices] 0]
+set_property PROBES.FILE {} [lindex [get_hw_devices] 0]
+set_property PROGRAM.FILE {C:/Users/User/Desktop/ECE/Final Project/Final Project.runs/impl_2/Scroll_Text.bit} [lindex [get_hw_devices] 0]
+program_hw_devices [lindex [get_hw_devices] 0]
+refresh_hw_device [lindex [get_hw_devices] 0]
+launch_simulation
+open_wave_config C:/Users/User/Desktop/ECE/Final
+open_wave_config Project/Reaction_Timer_FSM_tb_behav.wcfg
+open_wave_config C:/Users/User/Desktop/ECE/Final
+open_wave_config Project/Reaction_Timer_FSM_tb_behav1.wcfg
+source time_count_tb.tcl
+close_sim
+launch_simulation
+open_wave_config C:/Users/User/Desktop/ECE/Final
+open_wave_config Project/Reaction_Timer_FSM_tb_behav.wcfg
+open_wave_config C:/Users/User/Desktop/ECE/Final
+open_wave_config Project/Reaction_Timer_FSM_tb_behav1.wcfg
+source time_count_tb.tcl
+close_sim
+launch_simulation
+open_wave_config C:/Users/User/Desktop/ECE/Final
+open_wave_config Project/Reaction_Timer_FSM_tb_behav.wcfg
+open_wave_config C:/Users/User/Desktop/ECE/Final
+open_wave_config Project/Reaction_Timer_FSM_tb_behav1.wcfg
+source time_count_tb.tcl
+close_sim
+launch_simulation
+open_wave_config C:/Users/User/Desktop/ECE/Final
+open_wave_config Project/Reaction_Timer_FSM_tb_behav.wcfg
+open_wave_config C:/Users/User/Desktop/ECE/Final
+open_wave_config Project/Reaction_Timer_FSM_tb_behav1.wcfg
+source time_count_tb.tcl
+close_sim
+launch_simulation
+open_wave_config C:/Users/User/Desktop/ECE/Final
+open_wave_config Project/Reaction_Timer_FSM_tb_behav.wcfg
+open_wave_config C:/Users/User/Desktop/ECE/Final
+open_wave_config Project/Reaction_Timer_FSM_tb_behav1.wcfg
+source time_count_tb.tcl
+close_sim
+launch_simulation
+open_wave_config C:/Users/User/Desktop/ECE/Final
+open_wave_config Project/Reaction_Timer_FSM_tb_behav.wcfg
+open_wave_config C:/Users/User/Desktop/ECE/Final
+open_wave_config Project/Reaction_Timer_FSM_tb_behav1.wcfg
+source time_count_tb.tcl
+set_property top reaction_top_tb [get_filesets sim_1]
+set_property top_lib xil_defaultlib [get_filesets sim_1]
+update_compile_order -fileset sim_1
+launch_simulation
+open_wave_config C:/Users/User/Desktop/ECE/Final
+open_wave_config Project/Reaction_Timer_FSM_tb_behav.wcfg
+open_wave_config C:/Users/User/Desktop/ECE/Final
+open_wave_config Project/Reaction_Timer_FSM_tb_behav1.wcfg
+source reaction_top_tb.tcl
+reset_run synth_1
+launch_runs synth_1
+wait_on_run synth_1
+close_sim
+launch_simulation
+open_wave_config C:/Users/User/Desktop/ECE/Final
+open_wave_config Project/Reaction_Timer_FSM_tb_behav.wcfg
+open_wave_config C:/Users/User/Desktop/ECE/Final
+open_wave_config Project/Reaction_Timer_FSM_tb_behav1.wcfg
+source reaction_top_tb.tcl
+close_sim
+launch_simulation
+open_wave_config C:/Users/User/Desktop/ECE/Final
+open_wave_config Project/Reaction_Timer_FSM_tb_behav.wcfg
+open_wave_config C:/Users/User/Desktop/ECE/Final
+open_wave_config Project/Reaction_Timer_FSM_tb_behav1.wcfg
+source reaction_top_tb.tcl
+launch_simulation
+open_wave_config C:/Users/User/Desktop/ECE/Final
+open_wave_config Project/Reaction_Timer_FSM_tb_behav.wcfg
+open_wave_config C:/Users/User/Desktop/ECE/Final
+open_wave_config Project/Reaction_Timer_FSM_tb_behav1.wcfg
+source reaction_top_tb.tcl
+reset_run synth_1
+launch_runs synth_1
+wait_on_run synth_1
+close_sim
+launch_simulation
+open_wave_config C:/Users/User/Desktop/ECE/Final
+open_wave_config Project/Reaction_Timer_FSM_tb_behav.wcfg
+open_wave_config C:/Users/User/Desktop/ECE/Final
+open_wave_config Project/Reaction_Timer_FSM_tb_behav1.wcfg
+source reaction_top_tb.tcl
+close_sim
+launch_simulation
+open_wave_config C:/Users/User/Desktop/ECE/Final
+open_wave_config Project/Reaction_Timer_FSM_tb_behav.wcfg
+open_wave_config C:/Users/User/Desktop/ECE/Final
+open_wave_config Project/Reaction_Timer_FSM_tb_behav1.wcfg
+source reaction_top_tb.tcl
+set_property top time_count_tb [get_filesets sim_1]
+set_property top_lib xil_defaultlib [get_filesets sim_1]
+update_compile_order -fileset sim_1
+current_sim simulation_11
+close_sim
+launch_simulation
+open_wave_config C:/Users/User/Desktop/ECE/Final
+open_wave_config Project/Reaction_Timer_FSM_tb_behav.wcfg
+open_wave_config C:/Users/User/Desktop/ECE/Final
+open_wave_config Project/Reaction_Timer_FSM_tb_behav1.wcfg
+source time_count_tb.tcl
+save_wave_config {C:/Users/User/Desktop/ECE/Final Project/time_count_tb_behav.wcfg}
+add_files -fileset sim_1 -norecurse {{C:/Users/User/Desktop/ECE/Final Project/time_count_tb_behav.wcfg}}
+set_property xsim.view {{C:/Users/User/Desktop/ECE/Final Project/Reaction_Timer_FSM_tb_behav.wcfg} {C:/Users/User/Desktop/ECE/Final Project/Reaction_Timer_FSM_tb_behav1.wcfg} {C:/Users/User/Desktop/ECE/Final Project/time_count_tb_behav.wcfg}} [get_filesets sim_1]
+close_sim
+launch_simulation
+open_wave_config C:/Users/User/Desktop/ECE/Final
+open_wave_config Project/Reaction_Timer_FSM_tb_behav.wcfg
+open_wave_config C:/Users/User/Desktop/ECE/Final
+open_wave_config Project/Reaction_Timer_FSM_tb_behav1.wcfg
+open_wave_config C:/Users/User/Desktop/ECE/Final
+open_wave_config Project/time_count_tb_behav.wcfg
+source time_count_tb.tcl
+launch_simulation
+open_wave_config C:/Users/User/Desktop/ECE/Final
+open_wave_config Project/Reaction_Timer_FSM_tb_behav.wcfg
+open_wave_config C:/Users/User/Desktop/ECE/Final
+open_wave_config Project/Reaction_Timer_FSM_tb_behav1.wcfg
+open_wave_config C:/Users/User/Desktop/ECE/Final
+open_wave_config Project/time_count_tb_behav.wcfg
+source time_count_tb.tcl
+remove_files {{C:/Users/User/Desktop/ECE/Final Project/RTL/scroll_text_test.sv}}
+reset_run synth_1
+launch_runs synth_1
+wait_on_run synth_1
+close_sim
+launch_simulation
+open_wave_config C:/Users/User/Desktop/ECE/Final
+open_wave_config Project/Reaction_Timer_FSM_tb_behav.wcfg
+open_wave_config C:/Users/User/Desktop/ECE/Final
+open_wave_config Project/Reaction_Timer_FSM_tb_behav1.wcfg
+open_wave_config C:/Users/User/Desktop/ECE/Final
+open_wave_config Project/time_count_tb_behav.wcfg
+source time_count_tb.tcl
+set_property top reaction_top_tb [get_filesets sim_1]
+set_property top_lib xil_defaultlib [get_filesets sim_1]
+update_compile_order -fileset sim_1
+current_sim simulation_17
+close_sim
+launch_simulation
+open_wave_config C:/Users/User/Desktop/ECE/Final
+open_wave_config Project/Reaction_Timer_FSM_tb_behav.wcfg
+open_wave_config C:/Users/User/Desktop/ECE/Final
+open_wave_config Project/Reaction_Timer_FSM_tb_behav1.wcfg
+open_wave_config C:/Users/User/Desktop/ECE/Final
+open_wave_config Project/time_count_tb_behav.wcfg
+source reaction_top_tb.tcl
+set_property top Reaction_Timer_FSM_tb [get_filesets sim_1]
+set_property top_lib xil_defaultlib [get_filesets sim_1]
+update_compile_order -fileset sim_1
+launch_simulation
+open_wave_config C:/Users/User/Desktop/ECE/Final
+open_wave_config Project/Reaction_Timer_FSM_tb_behav.wcfg
+open_wave_config C:/Users/User/Desktop/ECE/Final
+open_wave_config Project/Reaction_Timer_FSM_tb_behav1.wcfg
+open_wave_config C:/Users/User/Desktop/ECE/Final
+open_wave_config Project/time_count_tb_behav.wcfg
+source Reaction_Timer_FSM_tb.tcl
+reset_run synth_1
+launch_runs synth_1
+wait_on_run synth_1
+set_property top reaction_top_tb [get_filesets sim_1]
+set_property top_lib xil_defaultlib [get_filesets sim_1]
+update_compile_order -fileset sim_1
+current_sim simulation_22
+close_sim
+launch_simulation
+open_wave_config C:/Users/User/Desktop/ECE/Final
+open_wave_config Project/Reaction_Timer_FSM_tb_behav.wcfg
+open_wave_config C:/Users/User/Desktop/ECE/Final
+open_wave_config Project/Reaction_Timer_FSM_tb_behav1.wcfg
+open_wave_config C:/Users/User/Desktop/ECE/Final
+open_wave_config Project/time_count_tb_behav.wcfg
+source reaction_top_tb.tcl
+close_sim
+launch_simulation
+open_wave_config C:/Users/User/Desktop/ECE/Final
+open_wave_config Project/Reaction_Timer_FSM_tb_behav.wcfg
+open_wave_config C:/Users/User/Desktop/ECE/Final
+open_wave_config Project/Reaction_Timer_FSM_tb_behav1.wcfg
+open_wave_config C:/Users/User/Desktop/ECE/Final
+open_wave_config Project/time_count_tb_behav.wcfg
+source reaction_top_tb.tcl
+close_sim
+launch_simulation
+open_wave_config C:/Users/User/Desktop/ECE/Final
+open_wave_config Project/Reaction_Timer_FSM_tb_behav.wcfg
+open_wave_config C:/Users/User/Desktop/ECE/Final
+open_wave_config Project/Reaction_Timer_FSM_tb_behav1.wcfg
+open_wave_config C:/Users/User/Desktop/ECE/Final
+open_wave_config Project/time_count_tb_behav.wcfg
+source reaction_top_tb.tcl
+current_sim simulation_23
+launch_simulation
+open_wave_config C:/Users/User/Desktop/ECE/Final
+open_wave_config Project/Reaction_Timer_FSM_tb_behav.wcfg
+open_wave_config C:/Users/User/Desktop/ECE/Final
+open_wave_config Project/Reaction_Timer_FSM_tb_behav1.wcfg
+open_wave_config C:/Users/User/Desktop/ECE/Final
+open_wave_config Project/time_count_tb_behav.wcfg
+source reaction_top_tb.tcl
+reset_run synth_1
+launch_runs synth_1
+wait_on_run synth_1
+close_sim
+launch_simulation
+open_wave_config C:/Users/User/Desktop/ECE/Final
+open_wave_config Project/Reaction_Timer_FSM_tb_behav.wcfg
+open_wave_config C:/Users/User/Desktop/ECE/Final
+open_wave_config Project/Reaction_Timer_FSM_tb_behav1.wcfg
+open_wave_config C:/Users/User/Desktop/ECE/Final
+open_wave_config Project/time_count_tb_behav.wcfg
+source reaction_top_tb.tcl
+reset_run synth_1
+launch_runs synth_1
+wait_on_run synth_1
+launch_runs impl_2
+wait_on_run impl_2
+launch_runs impl_2 -to_step write_bitstream
+wait_on_run impl_2
+set_property PROBES.FILE {} [lindex [get_hw_devices] 0]
+set_property PROGRAM.FILE {C:/Users/User/Desktop/ECE/Final Project/Final Project.runs/impl_2/Scroll_Text.bit} [lindex [get_hw_devices] 0]
+program_hw_devices [lindex [get_hw_devices] 0]
+refresh_hw_device [lindex [get_hw_devices] 0]
+reset_run synth_1
+launch_runs synth_1
+wait_on_run synth_1
+launch_runs impl_2
+wait_on_run impl_2
+launch_runs impl_2 -to_step write_bitstream
+wait_on_run impl_2
+set_property PROBES.FILE {} [lindex [get_hw_devices] 0]
+set_property PROGRAM.FILE {C:/Users/User/Desktop/ECE/Final Project/Final Project.runs/impl_2/Scroll_Text.bit} [lindex [get_hw_devices] 0]
+program_hw_devices [lindex [get_hw_devices] 0]
+set_property PROBES.FILE {} [lindex [get_hw_devices] 0]
+set_property PROGRAM.FILE {C:/Users/User/Desktop/ECE/Final Project/Final Project.runs/impl_2/Scroll_Text.bit} [lindex [get_hw_devices] 0]
+program_hw_devices [lindex [get_hw_devices] 0]
+refresh_hw_device [lindex [get_hw_devices] 0]
+close_hw
+reset_run synth_1
+launch_runs synth_1
+wait_on_run synth_1
+launch_runs impl_2
+wait_on_run impl_2
+open_run impl_2
+close_sim
+launch_simulation
+open_wave_config C:/Users/User/Desktop/ECE/Final
+open_wave_config Project/Reaction_Timer_FSM_tb_behav.wcfg
+open_wave_config C:/Users/User/Desktop/ECE/Final
+open_wave_config Project/Reaction_Timer_FSM_tb_behav1.wcfg
+open_wave_config C:/Users/User/Desktop/ECE/Final
+open_wave_config Project/time_count_tb_behav.wcfg
+source reaction_top_tb.tcl
+launch_runs impl_2 -to_step write_bitstream
+wait_on_run impl_2
+open_hw
+connect_hw_server
+open_hw_target
+disconnect_hw_server localhost:3121
+disconnect_hw_server localhost:3121
+connect_hw_server
+open_hw_target
+set_property PROGRAM.FILE {C:/Users/User/Desktop/ECE/Final Project/Final Project.runs/impl_2/Scroll_Text.bit} [lindex [get_hw_devices] 0]
+current_hw_device [lindex [get_hw_devices] 0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices] 0]
+set_property PROBES.FILE {} [lindex [get_hw_devices] 0]
+set_property PROGRAM.FILE {C:/Users/User/Desktop/ECE/Final Project/Final Project.runs/impl_2/Scroll_Text.bit} [lindex [get_hw_devices] 0]
+program_hw_devices [lindex [get_hw_devices] 0]
+refresh_hw_device [lindex [get_hw_devices] 0]
+close_hw
+reset_run synth_1
+launch_runs synth_1
+wait_on_run synth_1
+launch_runs impl_2
+wait_on_run impl_2
+launch_runs impl_2 -to_step write_bitstream
+wait_on_run impl_2
+open_hw
+connect_hw_server
+open_hw_target
+set_property PROGRAM.FILE {C:/Users/User/Desktop/ECE/Final Project/Final Project.runs/impl_2/Scroll_Text.bit} [lindex [get_hw_devices] 0]
+current_hw_device [lindex [get_hw_devices] 0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices] 0]
+set_property PROBES.FILE {} [lindex [get_hw_devices] 0]
+set_property PROGRAM.FILE {C:/Users/User/Desktop/ECE/Final Project/Final Project.runs/impl_2/Scroll_Text.bit} [lindex [get_hw_devices] 0]
+program_hw_devices [lindex [get_hw_devices] 0]
+refresh_hw_device [lindex [get_hw_devices] 0]
+reset_run synth_1
+launch_runs synth_1
+wait_on_run synth_1
+launch_runs impl_2
+wait_on_run impl_2
+launch_runs impl_2 -to_step write_bitstream
+wait_on_run impl_2
+set_property PROBES.FILE {} [lindex [get_hw_devices] 0]
+set_property PROGRAM.FILE {C:/Users/User/Desktop/ECE/Final Project/Final Project.runs/impl_2/Scroll_Text.bit} [lindex [get_hw_devices] 0]
+program_hw_devices [lindex [get_hw_devices] 0]
+refresh_hw_device [lindex [get_hw_devices] 0]
+reset_run synth_1
+launch_runs synth_1
+wait_on_run synth_1
+launch_runs impl_2
+wait_on_run impl_2
+launch_runs impl_2 -to_step write_bitstream
+wait_on_run impl_2
+set_property PROBES.FILE {} [lindex [get_hw_devices] 0]
+set_property PROGRAM.FILE {C:/Users/User/Desktop/ECE/Final Project/Final Project.runs/impl_2/Scroll_Text.bit} [lindex [get_hw_devices] 0]
+program_hw_devices [lindex [get_hw_devices] 0]
+refresh_hw_device [lindex [get_hw_devices] 0]
+reset_run synth_1
+launch_runs synth_1
+wait_on_run synth_1
+launch_runs impl_2
+wait_on_run impl_2
+launch_runs impl_2 -to_step write_bitstream
+wait_on_run impl_2
+set_property PROBES.FILE {} [lindex [get_hw_devices] 0]
+set_property PROGRAM.FILE {C:/Users/User/Desktop/ECE/Final Project/Final Project.runs/impl_2/Scroll_Text.bit} [lindex [get_hw_devices] 0]
+program_hw_devices [lindex [get_hw_devices] 0]
+refresh_hw_device [lindex [get_hw_devices] 0]
+set_property PROBES.FILE {} [lindex [get_hw_devices] 0]
+set_property PROGRAM.FILE {C:/Users/User/Desktop/ECE/Final Project/Final Project.runs/impl_2/Scroll_Text.bit} [lindex [get_hw_devices] 0]
+program_hw_devices [lindex [get_hw_devices] 0]
+refresh_hw_device [lindex [get_hw_devices] 0]
+reset_run synth_1
+launch_runs synth_1
+wait_on_run synth_1
+launch_runs impl_2
+wait_on_run impl_2
+launch_runs impl_2 -to_step write_bitstream
+wait_on_run impl_2
+set_property PROBES.FILE {} [lindex [get_hw_devices] 0]
+set_property PROGRAM.FILE {C:/Users/User/Desktop/ECE/Final Project/Final Project.runs/impl_2/Scroll_Text.bit} [lindex [get_hw_devices] 0]
+program_hw_devices [lindex [get_hw_devices] 0]
+refresh_hw_device [lindex [get_hw_devices] 0]
+reset_run synth_1
+launch_runs synth_1
+wait_on_run synth_1
+launch_runs impl_2
+wait_on_run impl_2
+launch_runs impl_2 -to_step write_bitstream
+wait_on_run impl_2
+set_property PROBES.FILE {} [lindex [get_hw_devices] 0]
+set_property PROGRAM.FILE {C:/Users/User/Desktop/ECE/Final Project/Final Project.runs/impl_2/Scroll_Text.bit} [lindex [get_hw_devices] 0]
+program_hw_devices [lindex [get_hw_devices] 0]
+refresh_hw_device [lindex [get_hw_devices] 0]
+reset_run synth_1
+launch_runs synth_1
+wait_on_run synth_1
+launch_runs impl_2
+wait_on_run impl_2
+launch_runs impl_2 -to_step write_bitstream
+wait_on_run impl_2
+set_property PROBES.FILE {} [lindex [get_hw_devices] 0]
+set_property PROGRAM.FILE {C:/Users/User/Desktop/ECE/Final Project/Final Project.runs/impl_2/Scroll_Text.bit} [lindex [get_hw_devices] 0]
+program_hw_devices [lindex [get_hw_devices] 0]
+refresh_hw_device [lindex [get_hw_devices] 0]
+close_sim
+current_sim simulation_23
+close_sim
+current_sim simulation_21
+close_sim
+close_sim

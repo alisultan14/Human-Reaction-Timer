@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="Reaction_Timer_FSM_tb_behav.wdb" id="1">
+         <top_modules>
+            <top_module name="Reaction_Timer_FSM_tb" />
+            <top_module name="glbl" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <zoom_setting>
+      <ZoomStartTime time="984666666fs"></ZoomStartTime>
+      <ZoomEndTime time="1003066667fs"></ZoomEndTime>
+      <Cursor1Time time="1000000000fs"></Cursor1Time>
+   </zoom_setting>
+   <WVObjectSize size="33" />
+   <wvobject fp_name="/Reaction_Timer_FSM_tb/clk" type="logic">
+      <obj_property name="ElementShortName">clk</obj_property>
+      <obj_property name="ObjectShortName">clk</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Reaction_Timer_FSM_tb/start" type="logic">
+      <obj_property name="ElementShortName">start</obj_property>
+      <obj_property name="ObjectShortName">start</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Reaction_Timer_FSM_tb/RESET" type="logic">
+      <obj_property name="ElementShortName">RESET</obj_property>
+      <obj_property name="ObjectShortName">RESET</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Reaction_Timer_FSM_tb/enter" type="logic">
+      <obj_property name="ElementShortName">enter</obj_property>
+      <obj_property name="ObjectShortName">enter</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Reaction_Timer_FSM_tb/rwait_done" type="logic">
+      <obj_property name="ElementShortName">rwait_done</obj_property>
+      <obj_property name="ObjectShortName">rwait_done</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Reaction_Timer_FSM_tb/wait5_done" type="logic">
+      <obj_property name="ElementShortName">wait5_done</obj_property>
+      <obj_property name="ObjectShortName">wait5_done</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Reaction_Timer_FSM_tb/time_late" type="logic">
+      <obj_property name="ElementShortName">time_late</obj_property>
+      <obj_property name="ObjectShortName">time_late</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Reaction_Timer_FSM_tb/start_rwait" type="logic">
+      <obj_property name="ElementShortName">start_rwait</obj_property>
+      <obj_property name="ObjectShortName">start_rwait</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Reaction_Timer_FSM_tb/start_wait5" type="logic">
+      <obj_property name="ElementShortName">start_wait5</obj_property>
+      <obj_property name="ObjectShortName">start_wait5</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Reaction_Timer_FSM_tb/time_clr" type="logic">
+      <obj_property name="ElementShortName">time_clr</obj_property>
+      <obj_property name="ObjectShortName">time_clr</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Reaction_Timer_FSM_tb/time_en" type="logic">
+      <obj_property name="ElementShortName">time_en</obj_property>
+      <obj_property name="ObjectShortName">time_en</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Reaction_Timer_FSM_tb/rs_en" type="logic">
+      <obj_property name="ElementShortName">rs_en</obj_property>
+      <obj_property name="ObjectShortName">rs_en</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Reaction_Timer_FSM_tb/color_r" type="array">
+      <obj_property name="ElementShortName">color_r[2:0]</obj_property>
+      <obj_property name="ObjectShortName">color_r[2:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Reaction_Timer_FSM_tb/color_g" type="array">
+      <obj_property name="ElementShortName">color_g[2:0]</obj_property>
+      <obj_property name="ObjectShortName">color_g[2:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Reaction_Timer_FSM_tb/color_b" type="array">
+      <obj_property name="ElementShortName">color_b[2:0]</obj_property>
+      <obj_property name="ObjectShortName">color_b[2:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Reaction_Timer_FSM_tb/CLK_PD" type="array">
+      <obj_property name="ElementShortName">CLK_PD[31:0]</obj_property>
+      <obj_property name="ObjectShortName">CLK_PD[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Reaction_Timer_FSM_tb/DUV/clk" type="logic">
+      <obj_property name="ElementShortName">clk</obj_property>
+      <obj_property name="ObjectShortName">clk</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Reaction_Timer_FSM_tb/DUV/start" type="logic">
+      <obj_property name="ElementShortName">start</obj_property>
+      <obj_property name="ObjectShortName">start</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Reaction_Timer_FSM_tb/DUV/RESET" type="logic">
+      <obj_property name="ElementShortName">RESET</obj_property>
+      <obj_property name="ObjectShortName">RESET</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Reaction_Timer_FSM_tb/DUV/enter" type="logic">
+      <obj_property name="ElementShortName">enter</obj_property>
+      <obj_property name="ObjectShortName">enter</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Reaction_Timer_FSM_tb/DUV/rwait_done" type="logic">
+      <obj_property name="ElementShortName">rwait_done</obj_property>
+      <obj_property name="ObjectShortName">rwait_done</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Reaction_Timer_FSM_tb/DUV/wait5_done" type="logic">
+      <obj_property name="ElementShortName">wait5_done</obj_property>
+      <obj_property name="ObjectShortName">wait5_done</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Reaction_Timer_FSM_tb/DUV/time_late" type="logic">
+      <obj_property name="ElementShortName">time_late</obj_property>
+      <obj_property name="ObjectShortName">time_late</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Reaction_Timer_FSM_tb/DUV/start_rwait" type="logic">
+      <obj_property name="ElementShortName">start_rwait</obj_property>
+      <obj_property name="ObjectShortName">start_rwait</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Reaction_Timer_FSM_tb/DUV/start_wait5" type="logic">
+      <obj_property name="ElementShortName">start_wait5</obj_property>
+      <obj_property name="ObjectShortName">start_wait5</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Reaction_Timer_FSM_tb/DUV/time_clr" type="logic">
+      <obj_property name="ElementShortName">time_clr</obj_property>
+      <obj_property name="ObjectShortName">time_clr</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Reaction_Timer_FSM_tb/DUV/time_en" type="logic">
+      <obj_property name="ElementShortName">time_en</obj_property>
+      <obj_property name="ObjectShortName">time_en</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Reaction_Timer_FSM_tb/DUV/rs_en" type="logic">
+      <obj_property name="ElementShortName">rs_en</obj_property>
+      <obj_property name="ObjectShortName">rs_en</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Reaction_Timer_FSM_tb/DUV/color_r" type="array">
+      <obj_property name="ElementShortName">color_r[2:0]</obj_property>
+      <obj_property name="ObjectShortName">color_r[2:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Reaction_Timer_FSM_tb/DUV/color_g" type="array">
+      <obj_property name="ElementShortName">color_g[2:0]</obj_property>
+      <obj_property name="ObjectShortName">color_g[2:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Reaction_Timer_FSM_tb/DUV/color_b" type="array">
+      <obj_property name="ElementShortName">color_b[2:0]</obj_property>
+      <obj_property name="ObjectShortName">color_b[2:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Reaction_Timer_FSM_tb/DUV/state" type="array">
+      <obj_property name="ElementShortName">state[2:0]</obj_property>
+      <obj_property name="ObjectShortName">state[2:0]</obj_property>
+      <obj_property name="isExpanded"></obj_property>
+   </wvobject>
+   <wvobject fp_name="/Reaction_Timer_FSM_tb/DUV/next_state" type="array">
+      <obj_property name="ElementShortName">next_state[2:0]</obj_property>
+      <obj_property name="ObjectShortName">next_state[2:0]</obj_property>
+   </wvobject>
+</wave_config>
